@@ -55,9 +55,30 @@ Upcoming changes</a>
 <!-- Record your changes in the trunk here. -->
 <div id="trunk" style="display:none"><!--=TRUNK-BEGIN=-->
 <ul class=image>
+  <li class="bug">
+    Worked around "incompatible InnerClasses attribute" bug in IBM J9 VM
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-22525">issue 22525</a>)
+  <li class="bug">
+    Fixed a file descriptor leak with CLI connections.
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-23248">issue 23248</a>)
+  <li class="bug major">
+    Fixed a regression that removed all users with uppercase letters in the user name since 1.566.
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-23872">issue 23872</a>)
   <li class="rfe">
-  Made it so that a custom workspace can specify the 'WORKSPACE' variable and if that is the case then the custom workspace is treated as a modification of the auto-generated workspace.
-  (<a href="https://issues.jenkins-ci.org/browse/JENKINS-23929">issue 23929</a>)
+    Added support for host:port format in X-Forwarded-Host header.
+    (<a href="https://github.com/jenkinsci/jenkins/commit/19d8b80bb2f33e4877c7170bcca8bfa318ebe77d">commit 19d8b80</a>)
+  <li class="rfe">
+    Added option to increase impact of test failures on the weather report.
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-24006">issue 24006</a>)
+  <li class="rfe">
+    Modernized sidebar <code>&lt;l:pane&gt;</code>s and making them work better with new layout.
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-23810">issue 23810</a>)
+  <li class="rfe">
+    Encapsulate icon rendering in a new <code>&lt;l:icon&gt;</code> layout tag.
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-23842">issue 23842</a>)
+  <li class="rfe">
+    Made it so that a custom workspace can specify the 'WORKSPACE' variable and if that is the case then the custom workspace is treated as a modification of the auto-generated workspace.
+    (<a href="https://issues.jenkins-ci.org/browse/JENKINS-23929">issue 23929</a>)
 </ul>
 </div><!--=TRUNK-END=-->
 
